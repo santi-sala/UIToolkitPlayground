@@ -1,0 +1,29 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UITesting/UITesting_StyleSheet.uss?fileID=7433441132597879392&amp;guid=7992b1108078827478dd72f8a176ff4a&amp;type=3#UITesting_StyleSheet" />
+    <ui:VisualElement name="MainContainer" style="border-left-color: rgb(34, 56, 231); border-right-color: rgb(34, 56, 231); border-top-color: rgb(34, 56, 231); border-bottom-color: rgb(34, 56, 231); border-top-width: 10px; border-right-width: 10px; border-bottom-width: 10px; border-left-width: 10px; flex-grow: 1; background-image: url(&apos;project://database/Assets/UITesting/Images/samurai.jpg?fileID=2800000&amp;guid=855ecd318870b854997a6649a57eff33&amp;type=3#samurai&apos;); -unity-background-scale-mode: stretch-to-fill; -unity-background-image-tint-color: rgba(164, 79, 161, 0.9);">
+        <ui:VisualElement name="TopContainer" style="flex-grow: 1; flex-basis: 80%; flex-direction: row;">
+            <ui:VisualElement name="TopLeft" style="flex-grow: 0; flex-basis: 20%; justify-content: flex-end; margin-right: 10%;">
+                <ui:VisualElement name="PanelMiniFaction" class="panel" style="flex-grow: 0; margin-top: 20px; margin-right: 0; margin-bottom: 20px; margin-left: 20px; padding-bottom: 50px; padding-left: 50px; padding-top: 50px;" />
+                <ui:VisualElement name="PanelCharacter" class="panel" style="flex-grow: 1; flex-basis: 80%;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="TopRight" style="flex-grow: 0; flex-basis: 60%; justify-content: flex-end; flex-direction: row; align-items: flex-end;">
+                <ui:VisualElement name="PanelFraction" class="panel" style="flex-grow: 1; flex-basis: 35%; height: 80%; border-top-right-radius: 0; border-bottom-right-radius: 0;" />
+                <ui:VisualElement name="PanelBadges" style="flex-grow: 1; flex-basis: 10%; height: 80%; margin-right: 5px;">
+                    <ui:VisualElement class="panel-badge" style="flex-grow: 1; border-top-right-radius: 20px;" />
+                    <ui:VisualElement class="panel-badge" style="flex-grow: 1;" />
+                    <ui:VisualElement class="panel-badge" style="flex-grow: 1;" />
+                    <ui:VisualElement class="panel-badge" style="flex-grow: 1;" />
+                    <ui:VisualElement class="panel-badge" style="flex-grow: 1;" />
+                    <ui:VisualElement class="panel-badge" style="flex-grow: 1; margin-bottom: 0; border-bottom-right-radius: 20px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="PanelList" class="panel" style="flex-grow: 1; flex-basis: 35%; height: 80%; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-right: 5px;" />
+                <ui:VisualElement name="PanelInfo" class="panel" style="flex-grow: 1; flex-basis: 20%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0;">
+                    <ui:VisualElement name="VisualElement" class="panel" style="flex-grow: 1; flex-basis: 100px; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;" />
+                    <ui:VisualElement name="VisualElement" class="panel" style="flex-grow: 1; flex-basis: 100px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;" />
+                    <ui:VisualElement name="VisualElement" class="panel" style="flex-grow: 1; flex-basis: 100px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 20px; border-bottom-left-radius: 0;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="BottomContainer" style="flex-grow: 1; flex-basis: 20%; flex-direction: row;" />
+    </ui:VisualElement>
+</ui:UXML>
