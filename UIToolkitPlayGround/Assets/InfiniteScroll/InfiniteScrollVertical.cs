@@ -59,13 +59,9 @@ public class InfiniteScrollVertical : MonoBehaviour
             isUpdated = false;
             scrollRect.velocity = oldVelocity;
         }
-        //Debug.Log("vertical " + itemsList.Length * (itemsList[0].rect.height + VLG.spacing));
-        //Debug.Log("sup " + contentPanelTransform.localPosition.y);
-
         
         if (contentPanelTransform.localPosition.y > (itemsList.Length * (itemsList[0].rect.height + VLG.spacing)))
         {
-            Debug.Log("first y");
             Canvas.ForceUpdateCanvases();
             oldVelocity = scrollRect.velocity;
             contentPanelTransform.localPosition -= new Vector3( 0, itemsList.Length * (itemsList[0].rect.height + VLG.spacing), 0);
@@ -75,8 +71,6 @@ public class InfiniteScrollVertical : MonoBehaviour
 
         if (contentPanelTransform.localPosition.y < 0)
         {
-            Debug.Log("second y");
-
             Canvas.ForceUpdateCanvases();
             oldVelocity = scrollRect.velocity;
             contentPanelTransform.localPosition += new Vector3( 0, itemsList.Length * (itemsList[0].rect.height + VLG.spacing), 0);
