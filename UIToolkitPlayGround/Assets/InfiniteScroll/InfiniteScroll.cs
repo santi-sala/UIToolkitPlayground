@@ -51,7 +51,7 @@ public class InfiniteScroll : MonoBehaviour
         }
         if (contentPanelTransform.localPosition.x > 0)
         {
-            Debug.Log("first x");
+           //Debug.Log("first x");
 
             Canvas.ForceUpdateCanvases();
             oldVelocity = scrollRect.velocity;
@@ -59,10 +59,10 @@ public class InfiniteScroll : MonoBehaviour
             isUpdated = true;
         }
 
-        Debug.Log("horizontal: " + itemsList.Length * (itemsList[0].rect.width + HLG.spacing));
+        //Debug.Log("horizontal: " + itemsList.Length * (itemsList[0].rect.width + HLG.spacing));
         if (contentPanelTransform.localPosition.x < 0 - (itemsList.Length * (itemsList[0].rect.width + HLG.spacing)))
         {
-            Debug.Log("second x");
+            //Debug.Log("second x");
 
             Canvas.ForceUpdateCanvases();
             oldVelocity = scrollRect.velocity;
